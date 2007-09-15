@@ -1,5 +1,5 @@
 %define version 0.06
-%define release %mkrel 3
+%define release %mkrel 4
 %define realname	Acme-JavaTrace
 %define name 	perl-%{realname}
 
