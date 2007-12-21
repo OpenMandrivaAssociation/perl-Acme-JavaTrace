@@ -12,6 +12,7 @@ Group: 		Development/Perl
 Source: 	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Acme/%{realname}-%{version}.tar.bz2
 URL: 		http://search.cpan.org/dist/%{realname}
 BuildRequires:	perl-devel
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-root/
 Requires: 	perl
 BuildArch:	noarch
    
