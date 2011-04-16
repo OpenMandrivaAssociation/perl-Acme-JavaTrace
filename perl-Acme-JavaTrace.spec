@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:	Module for using Java-like stack traces
 License: 	GPL
@@ -39,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc Changes README INSTALL
-%{perl_vendorlib}
+%{perl_vendorlib}/*/*.pm
 %{_mandir}/*/*
