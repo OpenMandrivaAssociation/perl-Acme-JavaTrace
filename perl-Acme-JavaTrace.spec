@@ -1,15 +1,13 @@
 %define upstream_name	Acme-JavaTrace
-%define upstream_version 0.08
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.08
+Release:	7
 
 Summary:	Module for using Java-like stack traces
 License:	GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Acme-JavaTrace
-Source0:	https://cpan.metacpan.org/authors/id/S/SA/SAPER/Acme-JavaTrace-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SA/SAPER/Acme-JavaTrace-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ by porting the Java paradigm to print stack traces, which is more professional
 than Perl's way.</buzzword>
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -50,9 +48,7 @@ make test
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.70.0-1mdv2011.0
 + Revision: 406832
-- rebuild using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.07-3mdv2009.0
+- rebuild using %0.08 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.07-3mdv2009.0
 + Revision: 255256
 - rebuild
 
